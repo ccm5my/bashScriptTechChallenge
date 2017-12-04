@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Takes in two inputs: working directory path and output directory path
+
+echo What is the working directory?
+read workingDirectory
+if [ !$workingDirectory -d File ]
+then
+
+mkdir /Users/cmoore/Desktop/TechChallenge/IntermediateFilesNew
+
+fi
+
+echo $workingDirectory
+
+echo What is the output directory?
+read outputDirectory
+
+if [ !$outputDirectory -d File ]
+
+then
+
+mkdir /Users/cmoore/Desktop/TechChallenge/finalOutputFilesNew
+fi
+echo $outputDirectory 
+
